@@ -1,7 +1,10 @@
 var projects = 
     [
-        { "name": "SlashPack", "desc": "URLs to subprojects", "url": "", "img": "" },
-        { "name": "CSS Shortcuts", "desc": "CSS shortcuts by class names", "url": "", "img": "" }
+        { "name": "SlashPack", "desc": "URLs to subprojects", "url": "https://slashpack.vercel.app/", "img": "./img/slashp.png" },
+        { "name": "CSS Shortcuts", "desc": "CSS shortcuts by class names", "url": "", "img": "" },
+        { "name": "SlashDEV", "desc": "A multi-action online program", "url": "", "img": "./img/slash.png" },
+        { "name": "Alias", "desc": "A moderating Discord Bot", "url": "", "img": "./img/boticon.png" },
+        { "name": "Snippet Master", "desc": "A Snippets VS Code Extension", "url": "https://marketplace.visualstudio.com/items?itemName=SlashDEV.snippet-master", "img": "./img/sm.png" }
     ]
 var experiences = 
     [
@@ -27,7 +30,7 @@ function createSkillCard(contents) {
             <div class="subtitle">${contents['desc']}</div>
             <div class="creadits">${contents['type']}</div>
         </div>
-        <i class="img fab fa-${contents['key']}" style="color: ${contents['color']};"></i>
+        <i class="icon fab fa-${contents['key']}" style="color: ${contents['color']};"></i>
     </cardc>`
     var place = document.getElementById(`skicards`);
     place.insertAdjacentHTML('beforeend', card);
@@ -43,9 +46,8 @@ function createProjectCard(contents) {
         <div class="cardcontent">
             <div class="title">${contents['name']}</div>
             <div class="subtitle">${contents['desc']}</div>
-            <div class="creadits">${contents['type']}</div>
         </div>
-        <img class="img" src="${contents['img']}">
+        <img class="img" width="212" height="212" src="${contents['img']}">
     </carda>
     </a>`
     var place = document.getElementById(`procards`);
