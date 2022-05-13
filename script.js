@@ -1,7 +1,7 @@
 var projects = 
     [
         { "name": "SlashPack", "desc": "URLs to subprojects", "url": "https://slashpack.vercel.app/", "img": "./img/slashp.png" },
-        { "name": "CSS Shortcuts", "desc": "CSS shortcuts by class names", "url": "https://slashpack.vercel.app/shortcut/cssSC.css", "img": "" },
+        { "name": "CSS Shortcuts", "desc": "CSS shortcuts by class names", "url": "https://slashpack.vercel.app/shortcut/cssSC.css", "img": "./img/csssc.png" },
         { "name": "SlashDEV", "desc": "A multi-action online program", "url": "", "img": "./img/slash.png" },
         { "name": "Alias", "desc": "A moderating Discord Bot", "url": "./projects/bot.html", "img": "./img/boticon.png" },
         { "name": "Snippet Master", "desc": "A Snippets VS Code Extension", "url": "https://marketplace.visualstudio.com/items?itemName=SlashDEV.snippet-master", "img": "./img/sm.png" }
