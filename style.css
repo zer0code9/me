@@ -7,6 +7,12 @@ body {
     color: black;
     background-color: white;
     font-family: Fira Sans;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 a {
     text-decoration: none;
@@ -52,13 +58,10 @@ hero > #name > .animate__animated {
     margin: 10px;
 }
 
-holder {
-    display: flex;
-    flex-direction: column;
-}
 holder > .portion {
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 50px;
 }
 .cards {
     display: flex;
@@ -80,13 +83,14 @@ cardc {
     font-size: 20px;
     margin: 10px;
     min-height: 50px;
+    cursor: default;
 }
 carda {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 400x;
-    min-width: 400x;
+    max-width: 400px;
+    min-width: 400px;
     background: white;
     border-radius: 10px;
     box-shadow: rgba(0,0,0,0.15) 0 5px 15px;
@@ -132,11 +136,47 @@ carda {
 holder {
     background-color: rgb(233, 231, 231);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 60px;
 }
-#experiences {
+.even {
     background-color: white;
+}
+
+divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px;
+    width: 100%;
+}
+.divide {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+divider > img {
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.15) 0 5px 15px;
+    width: 100px;
+}
+divider > div {
+    display: flex;
+    text-align: left;
+    margin: 50px;
+    flex-direction: column;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
 }
 
