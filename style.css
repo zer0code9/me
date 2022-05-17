@@ -28,12 +28,36 @@ nav {
 }
 nav > #header {
     font-size: 30px;
-    justify-content: space-between;
     align-items: center;
 }
 nav > #header > .tab {
     margin: 20px;
     cursor: pointer;
+    height: 3rem;
+    width: 9rem;
+    position: relative;
+}
+.tab::before, .tab::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    transition: 0.5s ease;
+}
+.tab::before {
+    left: -10px;
+    top: -10px;
+    border-width: 3px 0 0 3px;
+}
+.tab::after {
+    right: -10px;
+    bottom: -10px;
+    border-width: 0 3px 3px 0;
+}
+.tab:hover::before, .tab:hover::after {
+    width: calc(100% + 17px);
+    height: calc(100% + 17px);
 }
 
 hero {
@@ -62,6 +86,7 @@ holder > .portion {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 50px;
+    border-bottom: 3px solid black;
 }
 .cards {
     display: flex;
@@ -97,7 +122,6 @@ carda {
     overflow: hidden;
     font-size: 20px;
     margin: 10px;
-    min-height: 50px;
 }
 .card:hover {
     transform: scale(1.05) rotate(1.5deg);;
@@ -178,5 +202,12 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 60px;
+    width: 100%;
+}
+.goto {
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    padding: 10px;
 }
 
