@@ -1,3 +1,38 @@
+window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+        return window.scrollY
+    }, {frameStep: 0.5})
+
+    // Add animation bindings to elements
+    lax.addElements('taker', {
+        scrollY: {
+            translateX: [
+                ["elCenterY"],
+                [0],
+            ],
+            translateY: [
+                ["elInY", "elCenterY"],
+                ['elHeight/4', 0]
+            ],
+            scale: [
+                ["elInY", "elCenterY - 350"],
+                [0.8, 1, 0.9]
+            ],
+            opacity: [
+                ["elInY", "elCenterY - 350"],
+                [0, 1]
+            ]
+        }
+    })
+}
+
+
+
+
+
     // { "name": "", "desc": "", "url": "./projects/", "img", "./img/"}
 var projects = 
     [
@@ -48,8 +83,9 @@ var skills =
         { "name": "Management", "desc": "Good", "type": "Work", "key": "", "color": "" },
         { "name": "Organization", "desc": "Good", "type": "Work", "key": "", "color": "" },
     ]
-
-function createSkillCard(contents) {
+var i = 0;
+var j = 0;
+function createSkillCard(contents, j) {
     let card = 
     `<cardc class="card">
         <div class="cardcontent">
@@ -59,14 +95,24 @@ function createSkillCard(contents) {
         </div>
         <i class="icon ${contents['key']}" style="color: ${contents['color']};"></i>
     </cardc>`
-    var place = document.getElementById(`skicards`);
+    var place = document.getElementById(`takers${j}`);
     place.insertAdjacentHTML('beforeend', card);
 }
 skills.forEach((skill) => {
-    createSkillCard(skill);
+    if (i % 5 == 0) {
+        let taker =
+        `<taker id="takers${j}"></taker>`
+        var place = document.getElementById(`skicards`);
+        place.insertAdjacentHTML('beforeend', taker);
+        j++;
+    }
+    createSkillCard(skill, j-1);
+    i++;
 })
 
-function createExperienceCard(contents) {
+i = 0;
+j = 0;
+function createExperienceCard(contents, j) {
     let card = 
     `<cardb class="card">
         <div class="cardcontent">
@@ -75,14 +121,22 @@ function createExperienceCard(contents) {
             <div class="creadits">${contents['desc']}</div>
         </div>
     </cardb>`
-    var place = document.getElementById(`expcards`);
+    var place = document.getElementById(`takere${j}`);
     place.insertAdjacentHTML('beforeend', card);
 }
 experiences.forEach((experience) => {
-    createExperienceCard(experience);
+    if (i % 3 == 0) {
+        let taker =
+        `<taker id="takere${j}"></taker>`
+        var place = document.getElementById(`expcards`);
+        place.insertAdjacentHTML('beforeend', taker);
+        j++;
+    }
+    createExperienceCard(experience, j-1);
+    i++;
 })
 
-function createProjectCard(contents) {
+function createProjectCard(contents, j) {
     let card = 
     `<a href="${contents['url']}">
     <carda class="card">
@@ -94,9 +148,17 @@ function createProjectCard(contents) {
         src="${contents['img']}">
     </carda>
     </a>`
-    var place = document.getElementById(`procards`);
+    var place = document.getElementById(`takerp${j}`);
     place.insertAdjacentHTML('beforeend', card);
 }
 projects.forEach((project) => {
-    createProjectCard(project);
+    if (i % 3 == 0) {
+        let taker =
+        `<taker id="takerp${j}"></taker>`
+        var place = document.getElementById(`procards`);
+        place.insertAdjacentHTML('beforeend', taker);
+        j++;
+    }
+    createProjectCard(project, j-1);
+    i++;
 })

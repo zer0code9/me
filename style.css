@@ -31,7 +31,7 @@ nav > #header {
     align-items: center;
 }
 nav > #header > .tab {
-    margin: 20px;
+    margin: 15px;
     cursor: pointer;
     height: 3rem;
     width: 9rem;
@@ -66,7 +66,7 @@ hero {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 500px;
+    height: 1000px;
 }
 hero > #name {
     font-size: 60px;
@@ -104,7 +104,6 @@ hero > a::after {
     height: 30px;
     transition: 0.9s ease;
 }
-
 hero > a:hover::after {
     width: calc(80%);
 }
@@ -120,7 +119,15 @@ holder > .portion {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 85%;
+    width: 100%;
+}
+taker {
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
     transition: 0.15s ease;
 }
 cardc {
@@ -134,7 +141,6 @@ cardc {
     box-shadow: rgba(0,0,0,0.15) 0 5px 15px;
     overflow: hidden;
     font-size: 20px;
-    margin: 10px;
     min-height: 50px;
     cursor: default;
     transition: 0.15s ease;
@@ -150,7 +156,6 @@ cardb {
     box-shadow: rgba(0,0,0,0.15) 0 5px 15px;
     overflow: hidden;
     font-size: 20px;
-    margin: 10px;
     transition: 0.15s ease;
 }
 carda {
@@ -164,11 +169,13 @@ carda {
     box-shadow: rgba(0,0,0,0.15) 0 5px 15px;
     overflow: hidden;
     font-size: 20px;
-    margin: 10px;
     transition: 0.15s ease;
 }
+.card {
+    margin: 5px;
+}
 .card:hover {
-    transform: scale(1.05) rotate(1.5deg);;
+    transform: scale(1.05) rotate(1.5deg);
 }
 .cardcontent {
     color: black;
@@ -208,6 +215,10 @@ holder {
     align-items: center;
     justify-content: center;
     padding: 60px;
+}
+holder#exp > p {
+    text-align: center;
+    width: 60%;
 }
 .even {
     background-color: white;
