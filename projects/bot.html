@@ -37,7 +37,10 @@
             <img class="divide" src="../img/discord1.png">
 
             <div class="divide">
-                <p>This code uses the fs module to get every files in the events folder. The event handler permits the bot to be able to know what he has to do when a certain event is applied.</p>
+                <p>This code uses the fs module to get every files in the events folder. The event handler permits the bot to be able to know what he has to do when a certain event is applied.
+                    It has a startup event, a command handler, an interaction handler and even other event like when a new user joins the server or when a user leaves.
+                    All those events permit Alias to be able to work properly and efficiently as it knows the steps to take to complete an event.
+                </p>
                 <p>The code takes every event files and executes them one by one so that the bot works properly. It takes all the events, and if they work prperly, the bot starts to run.</p>
                 <p>Only JavaScript and the fs module are being used in the code.</p>
                 <p>This piece of code is necessary for the bot to run, without it, the bot couldn't be on as it doesn't know what to do when an event is applied.</p>
@@ -51,7 +54,8 @@
             <div class="divide" style="text-align: right;">
                 <p>This code takes every commands of the bot and push the information of the commands in docs.
                     Each command has a name, a description, and a type. The for each loop seeks for each of those fields for each commands and put them into the prompt.
-                    Then it pushes the filled prompt into the array docs.</p>
+                    Then it pushes the filled prompt into the array docs. It does that over and over until the for loop went through all the commands in the list.
+                </p>
                 <p>The docs is used to get all the information about the commands at once. Like this users can see all the available commands and know what they do.</p>
                 <p>It uses a for each that takes fields from a dictionary in javascript and usesd the push method to put the informations inside the array.</p>
             </div>
@@ -66,13 +70,24 @@
             <img class="divide" src="../img/discord3.png">
 
             <div class="divide">
-                <p>This code takes </p>
+                <p>This code export the feilds of the command to bot.botCommands viewed in the previous sample. It takes a name, a description, an example, a type, and executes a code.
+                    The fields are exported to an event which is handled by the event handler named messageCreate. When the command is called, the execute function is executed.
+                    The execute function takes information about the message that the user sent and any arguments that comes with the command. 
+                </p>
             </div>
         </divider>
     </holder>
 
     <footer>
-        <div>Thanks for looking!</div>
+        <div class="space">
+            <p>Thanks for looking!</p>
+            <p>Check my github or communicate!</p>
+        </div>
+        <div id="links" class="space">
+            <a class="goto fa-brands fa-github" href="https://github.com/zer0less"></a>
+            <a class="goto fa-solid fa-envelope" href="mailto:asorinus@gmail.com"></a>
+        </div>
     </footer>
+
 </body>
 </html>

@@ -65,6 +65,7 @@ hero {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     height: 500px;
 }
 hero > #name {
@@ -81,6 +82,32 @@ hero > div {
 hero > #name > .animate__animated {
     margin: 10px;
 }
+hero > #name > .animate__animated:hover {
+    color: red;
+}
+hero > a {
+    font-size: 20px;
+    margin: 10px 10px 0 10px;
+    color: blue;
+    position: relative;
+    transition: 0.9s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hero > a::after {
+    content: '';
+    border-bottom: 3px solid;
+    color: blue;
+    position: absolute;
+    width: 6%;
+    height: 30px;
+    transition: 0.9s ease;
+}
+
+hero > a:hover::after {
+    width: calc(80%);
+}
 
 holder > .portion {
     font-size: 30px;
@@ -94,6 +121,7 @@ holder > .portion {
     flex-wrap: wrap;
     justify-content: center;
     width: 85%;
+    transition: 0.15s ease;
 }
 cardc {
     display: flex;
@@ -109,6 +137,21 @@ cardc {
     margin: 10px;
     min-height: 50px;
     cursor: default;
+    transition: 0.15s ease;
+}
+cardb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 450px;
+    min-width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.15) 0 5px 15px;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 10px;
+    transition: 0.15s ease;
 }
 carda {
     display: flex;
@@ -122,6 +165,7 @@ carda {
     overflow: hidden;
     font-size: 20px;
     margin: 10px;
+    transition: 0.15s ease;
 }
 .card:hover {
     transform: scale(1.05) rotate(1.5deg);;
@@ -141,7 +185,7 @@ carda {
     justify-self: center;
 }
 .icon {
-    font-size: 100px;
+    font-size: 70px;
     display: flex;
     align-self: center;
     justify-self: center;
@@ -201,13 +245,22 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 60px;
-    width: 100%;
+    padding: 50px;
+    font-size: 20px;
+}
+.space {
+    margin: 0 100px;
 }
 .goto {
-    background-color: white;
-    color: black;
+    color: white;
     border-radius: 100%;
     padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.goto:hover {
+    transition: 1.3s ease;
+    background-color: white;
+    color: black;
 }
 
