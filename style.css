@@ -125,6 +125,12 @@ hero > a::after {
 hero > a:hover::after {
     width: calc(80%);
 }
+hero > #arrow {
+    position: absolute;
+    top: calc(100% - 25em);
+    opacity: 0.05;
+    width: 20em;
+}
 
 holder > .portion {
     font-size: 30px;
