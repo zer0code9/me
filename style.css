@@ -39,6 +39,10 @@ nav {
     position: fixed;
     z-index: 100;
     border-radius: 0 0 200px 200px;
+    transition: 0.2s ease;
+}
+nav:hover {
+    transform: scale(1.05);
 }
 nav > #header {
     font-size: 30px;
@@ -272,6 +276,10 @@ footer {
     justify-content: center;
     padding: 50px;
     font-size: 20px;
+    transition: 0.5s ease;
+}
+footer:hover {
+    transform: translateY(-10px) scale(1.1);
 }
 .space {
     margin: 0 100px;
