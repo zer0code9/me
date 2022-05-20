@@ -1,38 +1,3 @@
-window.onload = function () {
-    lax.init()
-
-    // Add a driver that we use to control our animations
-    lax.addDriver('scrollY', function () {
-        return window.scrollY
-    }, {frameStep: 0.5})
-
-    // Add animation bindings to elements
-    lax.addElements('taker', {
-        scrollY: {
-            translateX: [
-                ["elCenterY"],
-                [0],
-            ],
-            translateY: [
-                ["elInY", "elCenterY"],
-                ['elHeight/4', 0]
-            ],
-            scale: [
-                ["elInY", "elCenterY - 350"],
-                [0.8, 1, 0.9]
-            ],
-            opacity: [
-                ["elInY", "elCenterY - 350"],
-                [0, 1]
-            ]
-        }
-    })
-}
-
-
-
-
-
     // { "name": "", "desc": "", "url": "./projects/", "img", "./img/"}
 var projects = 
     [

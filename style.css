@@ -18,6 +18,16 @@ a {
     text-decoration: none;
     color: black;
 }
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    opacity: 0;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 40px;
+}
 
 nav {
     background-color: rgb(253, 252, 252);
@@ -25,6 +35,10 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    border-radius: 0 0 200px 200px;
 }
 nav > #header {
     font-size: 30px;
