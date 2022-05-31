@@ -1,13 +1,12 @@
   
-    // { "name": "", "desc": "", "url": "./projects/", "img", "./img/"}
+    // { "name": "", "desc": "", "url": "./projects/", "img": "./img/"}
 var projects = 
     [
         { "name": "SlashPack", "desc": "URLs to subprojects", "url": "https://slashpack.vercel.app/", "img": "./img/slashp.png" },
         { "name": "CSS Shortcuts", "desc": "CSS shortcuts by class names", "url": "./projects/sc.html", "img": "./img/csssc.png" },
         { "name": "Alias", "desc": "A moderating Discord Bot", "url": "./projects/bot.html", "img": "./img/boticon.png" },
         { "name": "Snippet Master", "desc": "A Snippets VS Code Extension", "url": "./projects/sm.html", "img": "./img/sm.png" },
-        { "name": "Break My Stride (Unofficial Music Video)", "desc": "A video of a song by Matthew Wilder",
-            "url": "https://docs.google.com/presentation/d/1lUMKIlWoc9HZ6LBY5jwsnKIHYzms_El99yWiq25ZADE/edit#slide=id.g11b37cc8821_0_230"}
+        { "name": "Me Tech Porfolio", "desc": "This website was made from scratch", "url": "./projects/me.html", "img": "./img/"}
     ]
     //{ "name": "", "loc": "", "date": "", "desc": "" },
 var experiences = 

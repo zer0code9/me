@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/acf35067e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/slash.png">
+    <title>Anselme - About Me Website</title>
+</head>
+<body>
+    <nav>
+        <div id="header">
+            <a class="fa-solid fa-chevron-left animate__animated animate__shakeX animate__delay-4s animate__slower" style="text-align: left;" href="../index.html#projects"></a>
+            <a id="pro" class="tab" href="#exp">explanation</a>
+            <a id="exp" class="tab" href="#one">sample 1</a>
+        </div>
+    </nav>
+    <hero>
+        <div id="name">About Me Tech Porfolio</div>
+        <p>Even though this website describes what I can do, it is also an example of my skills</p>
+        <img id="arrow" src="./../img/arrow.png"></img>
+    </hero>
+
+    <holder id="exp" class="odd">
+        <div class="portion">Explanation</div>
+        <p>This website was made to hold everything I can do or did: my projects, my experiences, and my skills</p>
+        <p>This about me page has multiple interactions for the viewer. It made entirely from scratch, no third parties were used exept for: lax (high-tech animations), Animate.css (animations), and Font Awesome (icons)
+            This page is an example of what I can do with Javascript, HTML, and CSS. I can make beautiful and smooth websites when I really want it. However, my CSS and JS skills still need a bit more practice to become Very Good.
+        </p>
+    </holder>
+
+    <holder id="one" class="even">
+        <div class="portion">Code Sample 1</div>
+        <divider>
+            <img class="divide" src="../img/me1.png">
+
+            <div class="divide">
+                <p>This website uses JavaScript to create and add all the cards on the home page. It is less code then writting all the cards on the page one by one.
+                    And if I want to add a card, I can just add the information and it will be on the page like that: without having me write the complete card.
+                    There is less code to see and search in when making changes.
+                </p>
+                <p>I used the basic JavaScript method to do this. Using the insertAdjacentElement method, I can add the peice of html code I want into the page.</p>
+                <p>The algorithm also creates different parties of all the elements in the array (takers) so that the animations on the page is better and more efficient.</p>
+            </div>
+        </divider>
+    </holder>
+
+    <footer>
+        <div class="space">
+            <p>Thanks for looking!</p>
+            <p>Check my github or communicate!</p>
+        </div>
+        <div id="links" class="space">
+            <a class="goto fa-brands fa-github" href="https://github.com/zer0less"></a>
+            <a class="goto fa-solid fa-envelope" href="mailto:asorinus@gmail.com"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="./../script/lax.js"></script>
+</body>
+</html>

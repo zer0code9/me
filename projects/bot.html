@@ -14,7 +14,7 @@
     <nav>
         <div id="header">
             <a class="fa-solid fa-chevron-left animate__animated animate__shakeX animate__delay-4s animate__slower" style="text-align: left;" href="../index.html#projects"></a>
-            <a id="pro" class="tab" href="#exp">explanation</a>
+            <a id="pro" class="tab" href="#explanation">explanation</a>
             <a id="exp" class="tab" href="#one">sample 1</a>
             <a id="ski" class="tab" href="#two">sample 2</a>
             <a id="ski" class="tab" href="#three">sample 3</a>
@@ -26,10 +26,12 @@
         <img id="arrow" src="./../img/arrow.png"></img>
     </hero>
 
-    <holder id="exp" class="odd">
+    <holder id="explanation" class="odd">
         <div class="portion">Explanation</div>
-        <p>Alias is a bot made for Discord use only. It has commands that its users can use to moderate their server.</p>
-        <p>However, it is not public as it needs a server to host and run forever. No server could be found to run this bot so it is just a test bot.</p>
+        <p>Alias is a bot made for Discord use only. It has commands that its users can use to moderate their server. It creates beautiful and easy-to-read embeds for the users.</p>
+        <p>However, it is not public as it needs a server to host and run forever. No server could be found to run this bot so it is just a test bot.
+            This bot was originally made as a pass-time but it became a project that I wanted to complete. I made this bot so that others can use it and have a better time in Discord
+        </p>
     </holder>
 
     <holder id="one" class="even">
@@ -52,7 +54,7 @@
     <holder id="two" class="odd">
         <div class="portion">Code Sample 2</div>
         <divider>
-            <div class="divide" style="text-align: right;">
+            <div class="divide">
                 <p>This code takes every commands of the bot and push the information of the commands in docs.
                     Each command has a name, a description, and a type. The for each loop seeks for each of those fields for each commands and put them into the prompt.
                     Then it pushes the filled prompt into the array docs. It does that over and over until the for loop went through all the commands in the list.
@@ -74,6 +76,10 @@
                 <p>This code export the feilds of the command to bot.botCommands viewed in the previous sample. It takes a name, a description, an example, a type, and executes a code.
                     The fields are exported to an event which is handled by the event handler named messageCreate. When the command is called, the execute function is executed.
                     The execute function takes information about the message that the user sent and any arguments that comes with the command. 
+                </p>
+                <p>
+                    It uses the export option of JS Modules using Node.JS. Node.JS and npm help make all the files run together and be exported to each other to work as a complete program.
+                    Then the program is runned online to be used on Discord.
                 </p>
             </div>
         </divider>

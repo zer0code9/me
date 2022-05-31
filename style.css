@@ -240,7 +240,7 @@ holder {
     justify-content: center;
     padding: 60px;
 }
-holder#exp > p {
+holder#explanation > p {
     text-align: center;
     width: 60%;
 }
