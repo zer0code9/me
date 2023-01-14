@@ -5,18 +5,18 @@ var projects =
         { "name": "SlashPack", "desc": "URLs to subprojects", "url": "https://slashpack.vercel.app/", "img": "./img/slashp.png" },
         { "name": "CSS Shortcuts", "desc": "CSS shortcuts by class names", "url": "./projects/sc.html", "img": "./img/csssc.png" },
         { "name": "Alias", "desc": "A moderating Discord Bot", "url": "./projects/bot.html", "img": "./img/boticon.png" },
-        { "name": "Snippet Master", "desc": "A Snippets VS Code Extension", "url": "./projects/sm.html", "img": "./img/sm.png" },
-        { "name": "Me Tech Porfolio", "desc": "This website was made from scratch", "url": "./projects/me.html", "img": "./img/"}
+        { "name": "Snippet Master", "desc": "A Snippets VS Code Extension", "url": "./projects/ds.html", "img": "./img/ds.png" },
+        { "name": "Me Tech Porfolio", "desc": "This website was made from scratch", "url": "./projects/me.html", "img": "./img/me.png"}
     ]
     //{ "name": "", "loc": "", "date": "", "desc": "" },
 var experiences = 
     [
-        { "name": "Tennis", "loc": "Mills High School", "date": "2016 - Present", "desc": "I play tennis every school year and I started when I was about 6 yo." },
-        { "name": "Foster Children Christmas Fair", "loc": "401 Roland Way, Oakland", "date": "December 18, 2021", "desc": "I helped install the fair and deliver Christmas gifts to kids." },
-        { "name": "PC Club", "loc": "Mills High School", "date": "October 2020 - May 2023", "desc": "I am learning to assemble the CPU and keys to make a keyboard." },
-        { "name": "Boba Bots", "loc": "Mills High School", "date": "October 2019 - May 2020", "desc": "I learned how to make electrical connections from the CPU to other like the motherboard using cables." },
-        { "name": "Java Programming", "loc": "Mills High School", "date": "August 2021 - May 2022", "desc": "I took AP Computer Science where I programmed in Java using Eclipse." },
-        { "name": "Film Making", "loc": "Mills High School", "date": "August 2021 - May 2022", "desc": "I edited videos to make films both serious and comic using Adobe Premiere Pro." },
+        { "name": "Tennis", "loc": "High School", "date": "2016 - Present", "desc": "I play tennis every school year and I started when I was about 6 yo." },
+        { "name": "Foster Children Christmas Fair", "loc": "Oakland", "date": "December 18, 2021", "desc": "I helped install the fair and deliver Christmas gifts to kids." },
+        { "name": "PC Club", "loc": "High School", "date": "October 2020 - May 2023", "desc": "I am learning to assemble the CPU and keys to make a keyboard." },
+        { "name": "Boba Bots", "loc": "High School", "date": "October 2019 - May 2020", "desc": "I learned how to make electrical connections from the CPU to other like the motherboard using cables." },
+        { "name": "Java Programming", "loc": "High School", "date": "August 2021 - May 2022", "desc": "I took AP Computer Science where I programmed in Java using Eclipse." },
+        { "name": "Film Making", "loc": "High School", "date": "August 2021 - May 2022", "desc": "I edited videos to make films both serious and comic using Adobe Premiere Pro." },
     ]
     //{ "name": "", "desc": "", "type": "", "key": "", "color": "" },
 var skills = 
